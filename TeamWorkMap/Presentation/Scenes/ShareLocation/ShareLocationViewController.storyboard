@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iCf-Lj-3WE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share Location View Controller-->
+        <scene sceneID="DgX-BY-S8A">
+            <objects>
+                <viewController storyboardIdentifier="ShareLocationViewController" id="iCf-Lj-3WE" customClass="ShareLocationViewController" customModule="TeamWorkMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dT2-zR-peP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-Ol-hNN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emO-xp-5gN">
+                                <rect key="frame" x="20" y="762" width="374" height="30"/>
+                                <state key="normal" title="Share Location"/>
+                                <connections>
+                                    <action selector="shareLocation:" destination="iCf-Lj-3WE" eventType="touchUpInside" id="6Ru-U2-ADv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8wD-hc-hzZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rMu-Ol-hNN" firstAttribute="leading" secondItem="8wD-hc-hzZ" secondAttribute="leading" id="1gF-ej-oM6"/>
+                            <constraint firstItem="8wD-hc-hzZ" firstAttribute="bottom" secondItem="rMu-Ol-hNN" secondAttribute="bottom" constant="100" id="bu8-Zr-29B"/>
+                            <constraint firstItem="8wD-hc-hzZ" firstAttribute="trailing" secondItem="emO-xp-5gN" secondAttribute="trailing" constant="20" id="fuJ-jy-EQF"/>
+                            <constraint firstItem="8wD-hc-hzZ" firstAttribute="trailing" secondItem="rMu-Ol-hNN" secondAttribute="trailing" id="hy0-mp-aJv"/>
+                            <constraint firstItem="emO-xp-5gN" firstAttribute="top" secondItem="rMu-Ol-hNN" secondAttribute="bottom" id="o9M-wb-Lp6"/>
+                            <constraint firstItem="emO-xp-5gN" firstAttribute="leading" secondItem="8wD-hc-hzZ" secondAttribute="leading" constant="20" id="qKp-Uf-Igv"/>
+                            <constraint firstItem="rMu-Ol-hNN" firstAttribute="top" secondItem="8wD-hc-hzZ" secondAttribute="top" id="zLw-Ph-ofF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="rMu-Ol-hNN" id="G6y-2K-2vG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BGh-G5-FIr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

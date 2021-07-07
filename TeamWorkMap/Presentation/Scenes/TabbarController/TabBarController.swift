@@ -21,6 +21,9 @@ class TabBarController: UITabBarController, Storyboarded, CoordinatorDelegate {
         
         let vc2 = self.viewControllers![1] as! UserLocationViewController
         vc2.coordinator = coordinator
+        
+        let vc3 = self.viewControllers![2] as! ShareLocationViewController
+        vc3.coordinator = coordinator
     }
 
 }
