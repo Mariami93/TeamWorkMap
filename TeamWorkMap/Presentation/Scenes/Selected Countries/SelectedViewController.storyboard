@@ -29,7 +29,9 @@
                             <constraint firstItem="e6R-ox-BAj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="jdO-4q-Nlu"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="selection.pin.in.out" catalog="system" id="j3v-qV-S3c"/>
                     <navigationItem key="navigationItem" id="26n-6g-gn4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="e6R-ox-BAj" id="LJc-uY-wqB"/>
                     </connections>
@@ -39,4 +41,7 @@
             <point key="canvasLocation" x="939.13043478260875" y="71.651785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="selection.pin.in.out" catalog="system" width="96" height="128"/>
+    </resources>
 </document>

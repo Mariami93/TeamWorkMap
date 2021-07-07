@@ -31,12 +31,14 @@ final class AppCoordinator: CoordinatorProtocol {
         window?.makeKeyAndVisible()
     }
 
-//    func proceedToImageEditVC(image: UIImage) {
-//        let vc = EditImageViewController.instantiateFromStoryboard()
-//        vc.coordinator = self
-//        vc.newImage = image
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
+    func proceedToSelectedMap(selectedCountry: String, lat: Double, long: Double) {
+        let vc = SelectedMapViewController.instantiateFromStoryboard()
+        vc.coordinator = self
+        vc.selectedCountry = selectedCountry
+        vc.lat = lat
+        vc.long = long
+        navigationController?.pushViewController(vc, animated: true)
+    }
 //    func proceedToImageEditVC(image: UIImage) {
 //        let vc = EditImageViewController.instantiateFromStoryboard()
 //        vc.coordinator = self

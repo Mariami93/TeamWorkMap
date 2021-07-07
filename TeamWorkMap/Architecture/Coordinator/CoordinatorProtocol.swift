@@ -12,5 +12,6 @@ protocol CoordinatorProtocol: AnyObject {
     init(_ window: UIWindow?, navigationController: UINavigationController?)
     
     func start()
-    
+    func proceedToSelectedMap(selectedCountry: String, lat: Double, long: Double) 
+
 }

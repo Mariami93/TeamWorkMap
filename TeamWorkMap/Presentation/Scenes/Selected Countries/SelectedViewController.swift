@@ -53,14 +53,8 @@ extension SelectedViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let sb = UIStoryboard(name: "SelectedMapViewController", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "SelectedMapViewController") as! SelectedMapViewController
-        
-        vc.selectedCountry = countries[indexPath.row].name
-        vc.lat = countries[indexPath.row].lat
-        vc.long = countries[indexPath.row].long
-        navigationController?.pushViewController(vc, animated: true)
-        
+
+        coordinator?.proceedToSelectedMap(selectedCountry: countries[indexPath.row].name, lat: countries[indexPath.row].lat, long: countries[indexPath.row].long)
     }
     
     
