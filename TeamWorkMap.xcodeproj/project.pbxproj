@@ -14,6 +14,13 @@
 		9A6684F12695D355003629C3 /* TeamWorkMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */; };
 		9A6684F32695D355003629C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684F22695D355003629C3 /* Assets.xcassets */; };
 		9A6684F62695D355003629C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684F42695D355003629C3 /* LaunchScreen.storyboard */; };
+		ABBBBC07269632C900341511 /* SelectedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBBC05269632C900341511 /* SelectedMapViewController.swift */; };
+		ABBBBC08269632C900341511 /* SelectedMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */; };
+		ABBBBC0C269632F700341511 /* SelectedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */; };
+		ABBBBC0D269632F700341511 /* SelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBBC0B269632F700341511 /* SelectedViewController.swift */; };
+		ABBBBC112696330A00341511 /* SelectedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC0F2696330A00341511 /* SelectedTableViewCell.xib */; };
+		ABBBBC122696330A00341511 /* SelectedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBBC102696330A00341511 /* SelectedTableViewCell.swift */; };
+		ABBBBC142696333600341511 /* UITableViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBBC132696333600341511 /* UITableViewExtentions.swift */; };
 		F180BFC52695FEAB002567DE /* UserLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F180BFC32695FEAB002567DE /* UserLocationViewController.storyboard */; };
 		F180BFC62695FEAB002567DE /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180BFC42695FEAB002567DE /* UserLocationViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +35,13 @@
 		9A6684F22695D355003629C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6684F52695D355003629C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6684F72695D355003629C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBBBC05269632C900341511 /* SelectedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedMapViewController.swift; sourceTree = "<group>"; };
+		ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedMapViewController.storyboard; sourceTree = "<group>"; };
+		ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedViewController.storyboard; sourceTree = "<group>"; };
+		ABBBBC0B269632F700341511 /* SelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedViewController.swift; sourceTree = "<group>"; };
+		ABBBBC0F2696330A00341511 /* SelectedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedTableViewCell.xib; sourceTree = "<group>"; };
+		ABBBBC102696330A00341511 /* SelectedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTableViewCell.swift; sourceTree = "<group>"; };
+		ABBBBC132696333600341511 /* UITableViewExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtentions.swift; sourceTree = "<group>"; };
 		F180BFC32695FEAB002567DE /* UserLocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocationViewController.storyboard; sourceTree = "<group>"; };
 		F180BFC42695FEAB002567DE /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +76,8 @@
 		9A6684E52695D355003629C3 /* TeamWorkMap */ = {
 			isa = PBXGroup;
 			children = (
+				ABBBBC09269632E700341511 /* Selected Countries */,
+				ABBBBC04269632BE00341511 /* Selected Map */,
 				F180BFC12695FEAB002567DE /* UserLocation */,
 				9A6684E62695D355003629C3 /* AppDelegate.swift */,
 				9A6684E82695D355003629C3 /* SceneDelegate.swift */,
@@ -71,8 +87,45 @@
 				9A6684F42695D355003629C3 /* LaunchScreen.storyboard */,
 				9A6684F72695D355003629C3 /* Info.plist */,
 				9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */,
+				ABBBBC152696335200341511 /* Extentions */,
 			);
 			path = TeamWorkMap;
+			sourceTree = "<group>";
+		};
+		ABBBBC04269632BE00341511 /* Selected Map */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */,
+				ABBBBC05269632C900341511 /* SelectedMapViewController.swift */,
+			);
+			path = "Selected Map";
+			sourceTree = "<group>";
+		};
+		ABBBBC09269632E700341511 /* Selected Countries */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBBC102696330A00341511 /* SelectedTableViewCell.swift */,
+				ABBBBC0F2696330A00341511 /* SelectedTableViewCell.xib */,
+				ABBBBC0E269632FC00341511 /* CV Cell */,
+				ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */,
+				ABBBBC0B269632F700341511 /* SelectedViewController.swift */,
+			);
+			path = "Selected Countries";
+			sourceTree = "<group>";
+		};
+		ABBBBC0E269632FC00341511 /* CV Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CV Cell";
+			sourceTree = "<group>";
+		};
+		ABBBBC152696335200341511 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBBC132696333600341511 /* UITableViewExtentions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		F180BFC12695FEAB002567DE /* UserLocation */ = {
@@ -150,8 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6684F62695D355003629C3 /* LaunchScreen.storyboard in Resources */,
+				ABBBBC112696330A00341511 /* SelectedTableViewCell.xib in Resources */,
 				9A6684F32695D355003629C3 /* Assets.xcassets in Resources */,
+				ABBBBC0C269632F700341511 /* SelectedViewController.storyboard in Resources */,
 				9A6684EE2695D355003629C3 /* Main.storyboard in Resources */,
+				ABBBBC08269632C900341511 /* SelectedMapViewController.storyboard in Resources */,
 				F180BFC52695FEAB002567DE /* UserLocationViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,8 +221,12 @@
 			files = (
 				9A6684F12695D355003629C3 /* TeamWorkMap.xcdatamodeld in Sources */,
 				9A6684EB2695D355003629C3 /* ViewController.swift in Sources */,
+				ABBBBC122696330A00341511 /* SelectedTableViewCell.swift in Sources */,
+				ABBBBC142696333600341511 /* UITableViewExtentions.swift in Sources */,
 				9A6684E72695D355003629C3 /* AppDelegate.swift in Sources */,
 				9A6684E92695D355003629C3 /* SceneDelegate.swift in Sources */,
+				ABBBBC07269632C900341511 /* SelectedMapViewController.swift in Sources */,
+				ABBBBC0D269632F700341511 /* SelectedViewController.swift in Sources */,
 				F180BFC62695FEAB002567DE /* UserLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
