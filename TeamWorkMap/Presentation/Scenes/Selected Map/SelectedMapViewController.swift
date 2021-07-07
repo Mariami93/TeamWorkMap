@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 import CoreLocation
-class SelectedMapViewController: UIViewController {
+class SelectedMapViewController: BaseViewController {
 
     var selectedCountry: String?
     

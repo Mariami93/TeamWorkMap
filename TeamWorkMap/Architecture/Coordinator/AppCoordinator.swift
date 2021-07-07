@@ -22,17 +22,31 @@ final class AppCoordinator: CoordinatorProtocol {
         
     }
     
-//    func start() {
-//        let vc = TabBarController.instantiateFromStoryboard()
+    func start() {
+        let vc = TabBarController.instantiateFromStoryboard()
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
+
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
+
+//    func proceedToImageEditVC(image: UIImage) {
+//        let vc = EditImageViewController.instantiateFromStoryboard()
 //        vc.coordinator = self
+//        vc.newImage = image
 //        navigationController?.pushViewController(vc, animated: true)
-//
-//        window?.rootViewController = navigationController
-//        window?.makeKeyAndVisible()
 //    }
-//
-//    func popViewController() {
-//        navigationController?.popViewController(animated: true)
+//    func proceedToImageEditVC(image: UIImage) {
+//        let vc = EditImageViewController.instantiateFromStoryboard()
+//        vc.coordinator = self
+//        vc.newImage = image
+//        navigationController?.pushViewController(vc, animated: true)
 //    }
-//
+//    func proceedToImageEditVC(image: UIImage) {
+//        let vc = EditImageViewController.instantiateFromStoryboard()
+//        vc.coordinator = self
+//        vc.newImage = image
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
 }

@@ -9,7 +9,7 @@ import CoreLocation
 import UIKit
 import MapKit
 
-class UserLocationViewController: UIViewController, UIGestureRecognizerDelegate {
+class UserLocationViewController: BaseViewController, UIGestureRecognizerDelegate {
     
     //MARK: - Outlets
 

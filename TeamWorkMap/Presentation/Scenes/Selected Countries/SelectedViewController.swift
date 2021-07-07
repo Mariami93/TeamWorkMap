@@ -14,7 +14,7 @@ struct SelectedCountry
     var long: Double
 }
 
-class SelectedViewController: UIViewController {
+class SelectedViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     

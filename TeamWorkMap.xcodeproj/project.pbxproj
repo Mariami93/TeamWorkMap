@@ -15,6 +15,9 @@
 		9A66853426965643003629C3 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853026965643003629C3 /* CoordinatorDelegate.swift */; };
 		9A66853526965643003629C3 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853126965643003629C3 /* CoordinatorProtocol.swift */; };
 		9A66853626965643003629C3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853226965643003629C3 /* Storyboarded.swift */; };
+		9A66853D269658A2003629C3 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66853C269658A2003629C3 /* TabBarController.storyboard */; };
+		9A668540269658EE003629C3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853F269658EE003629C3 /* TabBarController.swift */; };
+		9A66854426965AA2003629C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66854326965AA2003629C3 /* BaseViewController.swift */; };
 		ABBBBC07269632C900341511 /* SelectedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBBC05269632C900341511 /* SelectedMapViewController.swift */; };
 		ABBBBC08269632C900341511 /* SelectedMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */; };
 		ABBBBC0C269632F700341511 /* SelectedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */; };
@@ -37,6 +40,9 @@
 		9A66853026965643003629C3 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
 		9A66853126965643003629C3 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		9A66853226965643003629C3 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		9A66853C269658A2003629C3 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		9A66853F269658EE003629C3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		9A66854326965AA2003629C3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		ABBBBC05269632C900341511 /* SelectedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedMapViewController.swift; sourceTree = "<group>"; };
 		ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedMapViewController.storyboard; sourceTree = "<group>"; };
 		ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedViewController.storyboard; sourceTree = "<group>"; };
@@ -80,10 +86,10 @@
 			children = (
 				9AEF7FA72696554600E1E215 /* App */,
 				9AEF7FA82696555900E1E215 /* Presentation */,
+				9A66852B269655BD003629C3 /* Architecture */,
 				9AEF7FAC2696559300E1E215 /* Resources */,
 				9A6684F42695D355003629C3 /* LaunchScreen.storyboard */,
 				9A6684F72695D355003629C3 /* Info.plist */,
-				9A66852B269655BD003629C3 /* Architecture */,
 			);
 			path = TeamWorkMap;
 			sourceTree = "<group>";
@@ -116,6 +122,23 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		9A66853B26965827003629C3 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				9A66853C269658A2003629C3 /* TabBarController.storyboard */,
+				9A66853F269658EE003629C3 /* TabBarController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		9A66854226965A84003629C3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9A66854326965AA2003629C3 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		9AEF7FA72696554600E1E215 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +159,10 @@
 		9AEF7FA92696556200E1E215 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9A66853B26965827003629C3 /* TabbarController */,
 				ABBBBC09269632E700341511 /* Selected Countries */,
 				ABBBBC04269632BE00341511 /* Selected Map */,
+				9A66854226965A84003629C3 /* Base */,
 				F180BFC12695FEAB002567DE /* UserLocation */,
 			);
 			path = Scenes;
@@ -261,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A66853D269658A2003629C3 /* TabBarController.storyboard in Resources */,
 				9A6684F62695D355003629C3 /* LaunchScreen.storyboard in Resources */,
 				ABBBBC112696330A00341511 /* SelectedTableViewCell.xib in Resources */,
 				9A6684F32695D355003629C3 /* Assets.xcassets in Resources */,
@@ -277,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A66854426965AA2003629C3 /* BaseViewController.swift in Sources */,
 				ABBBBC122696330A00341511 /* SelectedTableViewCell.swift in Sources */,
 				ABBBBC142696333600341511 /* UITableViewExtentions.swift in Sources */,
 				9A66853526965643003629C3 /* CoordinatorProtocol.swift in Sources */,
@@ -286,6 +313,7 @@
 				9A66853326965643003629C3 /* AppCoordinator.swift in Sources */,
 				9A66853626965643003629C3 /* Storyboarded.swift in Sources */,
 				ABBBBC07269632C900341511 /* SelectedMapViewController.swift in Sources */,
+				9A668540269658EE003629C3 /* TabBarController.swift in Sources */,
 				ABBBBC0D269632F700341511 /* SelectedViewController.swift in Sources */,
 				F180BFC62695FEAB002567DE /* UserLocationViewController.swift in Sources */,
 			);
