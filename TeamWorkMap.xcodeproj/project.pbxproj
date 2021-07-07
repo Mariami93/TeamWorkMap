@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		9A6684E72695D355003629C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6684E62695D355003629C3 /* AppDelegate.swift */; };
 		9A6684E92695D355003629C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6684E82695D355003629C3 /* SceneDelegate.swift */; };
-		9A6684EB2695D355003629C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6684EA2695D355003629C3 /* ViewController.swift */; };
-		9A6684EE2695D355003629C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684EC2695D355003629C3 /* Main.storyboard */; };
-		9A6684F12695D355003629C3 /* TeamWorkMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */; };
 		9A6684F32695D355003629C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684F22695D355003629C3 /* Assets.xcassets */; };
 		9A6684F62695D355003629C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684F42695D355003629C3 /* LaunchScreen.storyboard */; };
+		9A66853326965643003629C3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66852F26965643003629C3 /* AppCoordinator.swift */; };
+		9A66853426965643003629C3 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853026965643003629C3 /* CoordinatorDelegate.swift */; };
+		9A66853526965643003629C3 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853126965643003629C3 /* CoordinatorProtocol.swift */; };
+		9A66853626965643003629C3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66853226965643003629C3 /* Storyboarded.swift */; };
 		ABBBBC07269632C900341511 /* SelectedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBBC05269632C900341511 /* SelectedMapViewController.swift */; };
 		ABBBBC08269632C900341511 /* SelectedMapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */; };
 		ABBBBC0C269632F700341511 /* SelectedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */; };
@@ -29,12 +30,13 @@
 		9A6684E32695D355003629C3 /* TeamWorkMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamWorkMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6684E62695D355003629C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A6684E82695D355003629C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A6684EA2695D355003629C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A6684ED2695D355003629C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A6684F02695D355003629C3 /* TeamWorkMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeamWorkMap.xcdatamodel; sourceTree = "<group>"; };
 		9A6684F22695D355003629C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6684F52695D355003629C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6684F72695D355003629C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A66852F26965643003629C3 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9A66853026965643003629C3 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		9A66853126965643003629C3 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		9A66853226965643003629C3 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		ABBBBC05269632C900341511 /* SelectedMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedMapViewController.swift; sourceTree = "<group>"; };
 		ABBBBC06269632C900341511 /* SelectedMapViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedMapViewController.storyboard; sourceTree = "<group>"; };
 		ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedViewController.storyboard; sourceTree = "<group>"; };
@@ -76,20 +78,77 @@
 		9A6684E52695D355003629C3 /* TeamWorkMap */ = {
 			isa = PBXGroup;
 			children = (
+				9AEF7FA72696554600E1E215 /* App */,
+				9AEF7FA82696555900E1E215 /* Presentation */,
+				9AEF7FAC2696559300E1E215 /* Resources */,
+				9A6684F42695D355003629C3 /* LaunchScreen.storyboard */,
+				9A6684F72695D355003629C3 /* Info.plist */,
+				9A66852B269655BD003629C3 /* Architecture */,
+			);
+			path = TeamWorkMap;
+			sourceTree = "<group>";
+		};
+		9A66852B269655BD003629C3 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				9A66852D269655CE003629C3 /* Managers */,
+				ABBBBC152696335200341511 /* Extentions */,
+				9A66852C269655C7003629C3 /* Coordinator */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		9A66852C269655C7003629C3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9A66852F26965643003629C3 /* AppCoordinator.swift */,
+				9A66853026965643003629C3 /* CoordinatorDelegate.swift */,
+				9A66853126965643003629C3 /* CoordinatorProtocol.swift */,
+				9A66853226965643003629C3 /* Storyboarded.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9A66852D269655CE003629C3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9AEF7FA72696554600E1E215 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9A6684E62695D355003629C3 /* AppDelegate.swift */,
+				9A6684E82695D355003629C3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9AEF7FA82696555900E1E215 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9AEF7FA92696556200E1E215 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9AEF7FA92696556200E1E215 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
 				ABBBBC09269632E700341511 /* Selected Countries */,
 				ABBBBC04269632BE00341511 /* Selected Map */,
 				F180BFC12695FEAB002567DE /* UserLocation */,
-				9A6684E62695D355003629C3 /* AppDelegate.swift */,
-				9A6684E82695D355003629C3 /* SceneDelegate.swift */,
-				9A6684EA2695D355003629C3 /* ViewController.swift */,
-				9A6684EC2695D355003629C3 /* Main.storyboard */,
-				9A6684F22695D355003629C3 /* Assets.xcassets */,
-				9A6684F42695D355003629C3 /* LaunchScreen.storyboard */,
-				9A6684F72695D355003629C3 /* Info.plist */,
-				9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */,
-				ABBBBC152696335200341511 /* Extentions */,
 			);
-			path = TeamWorkMap;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9AEF7FAC2696559300E1E215 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A6684F22695D355003629C3 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		AB3A4D7B2696443500DD2F28 /* SelectedCountries Cell */ = {
@@ -206,7 +265,6 @@
 				ABBBBC112696330A00341511 /* SelectedTableViewCell.xib in Resources */,
 				9A6684F32695D355003629C3 /* Assets.xcassets in Resources */,
 				ABBBBC0C269632F700341511 /* SelectedViewController.storyboard in Resources */,
-				9A6684EE2695D355003629C3 /* Main.storyboard in Resources */,
 				ABBBBC08269632C900341511 /* SelectedMapViewController.storyboard in Resources */,
 				F180BFC52695FEAB002567DE /* UserLocationViewController.storyboard in Resources */,
 			);
@@ -219,12 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6684F12695D355003629C3 /* TeamWorkMap.xcdatamodeld in Sources */,
-				9A6684EB2695D355003629C3 /* ViewController.swift in Sources */,
 				ABBBBC122696330A00341511 /* SelectedTableViewCell.swift in Sources */,
 				ABBBBC142696333600341511 /* UITableViewExtentions.swift in Sources */,
+				9A66853526965643003629C3 /* CoordinatorProtocol.swift in Sources */,
+				9A66853426965643003629C3 /* CoordinatorDelegate.swift in Sources */,
 				9A6684E72695D355003629C3 /* AppDelegate.swift in Sources */,
 				9A6684E92695D355003629C3 /* SceneDelegate.swift in Sources */,
+				9A66853326965643003629C3 /* AppCoordinator.swift in Sources */,
+				9A66853626965643003629C3 /* Storyboarded.swift in Sources */,
 				ABBBBC07269632C900341511 /* SelectedMapViewController.swift in Sources */,
 				ABBBBC0D269632F700341511 /* SelectedViewController.swift in Sources */,
 				F180BFC62695FEAB002567DE /* UserLocationViewController.swift in Sources */,
@@ -234,14 +294,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9A6684EC2695D355003629C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A6684ED2695D355003629C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A6684F42695D355003629C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,19 +479,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9A6684F02695D355003629C3 /* TeamWorkMap.xcdatamodel */,
-			);
-			currentVersion = 9A6684F02695D355003629C3 /* TeamWorkMap.xcdatamodel */;
-			path = TeamWorkMap.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9A6684DB2695D355003629C3 /* Project object */;
 }
