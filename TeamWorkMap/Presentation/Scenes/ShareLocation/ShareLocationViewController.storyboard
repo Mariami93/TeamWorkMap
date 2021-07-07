@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-Ol-hNN">
-                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="669"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emO-xp-5gN">
-                                <rect key="frame" x="20" y="762" width="374" height="30"/>
+                                <rect key="frame" x="20" y="713" width="374" height="30"/>
                                 <state key="normal" title="Share Location"/>
                                 <connections>
                                     <action selector="shareLocation:" destination="iCf-Lj-3WE" eventType="touchUpInside" id="6Ru-U2-ADv"/>
@@ -39,6 +39,8 @@
                             <constraint firstItem="rMu-Ol-hNN" firstAttribute="top" secondItem="8wD-hc-hzZ" secondAttribute="top" id="zLw-Ph-ofF"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="arrowshape.turn.up.left.2.fill" catalog="system" id="Wnn-tS-XQT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="rMu-Ol-hNN" id="G6y-2K-2vG"/>
                     </connections>
@@ -49,6 +51,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.left.2.fill" catalog="system" width="128" height="86"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
