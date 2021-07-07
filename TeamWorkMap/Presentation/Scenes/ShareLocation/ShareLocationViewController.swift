@@ -68,6 +68,40 @@ class ShareLocationViewController: BaseViewController, MKMapViewDelegate
     }
     
     @IBAction func shareLocation(_ sender: Any) {
+        var items = [AnyObject]()
+
+            let latitude: Double = 52.033809
+            let longitude: Double = 6.882286
+
+            let locationTitle = "Navigate to this address"
+            let URLString = "https://maps.apple.com?ll=\(latitude),\(longitude)"
+
+            guard let cachesPathString = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first else {
+                print("Error: couldn't find the caches directory.")
+                return
+            }
+
+            if let url = NSURL(string: URLString) {
+                items.append(url)
+            }
+
+            let vCardString = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                "N:;Shared Location;;;",
+                "FN:Shared Location",
+                "item1.URL;type=pref:http://maps.apple.com/?ll=\(latitude),\(longitude)",
+                "item1.X-ABLabel:map url",
+                "END:VCARD"
+                ].joined(separator: "\n")
+
+            let vCardFilePath = (cachesPathString as NSString).appendingPathComponent("vCard.loc.vcf")
+
+            let nsVCardData = NSURL(fileURLWithPath: vCardFilePath)
+            let shareItems:Array = [nsVCardData]
+
+            let activityController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+            present(activityController, animated:true, completion: nil)
         
         
 
