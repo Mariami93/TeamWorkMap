@@ -92,6 +92,15 @@
 			path = TeamWorkMap;
 			sourceTree = "<group>";
 		};
+		AB3A4D7B2696443500DD2F28 /* SelectedCountries Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBBC102696330A00341511 /* SelectedTableViewCell.swift */,
+				ABBBBC0F2696330A00341511 /* SelectedTableViewCell.xib */,
+			);
+			path = "SelectedCountries Cell";
+			sourceTree = "<group>";
+		};
 		ABBBBC04269632BE00341511 /* Selected Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,20 +113,11 @@
 		ABBBBC09269632E700341511 /* Selected Countries */ = {
 			isa = PBXGroup;
 			children = (
-				ABBBBC102696330A00341511 /* SelectedTableViewCell.swift */,
-				ABBBBC0F2696330A00341511 /* SelectedTableViewCell.xib */,
-				ABBBBC0E269632FC00341511 /* CV Cell */,
+				AB3A4D7B2696443500DD2F28 /* SelectedCountries Cell */,
 				ABBBBC0A269632F700341511 /* SelectedViewController.storyboard */,
 				ABBBBC0B269632F700341511 /* SelectedViewController.swift */,
 			);
 			path = "Selected Countries";
-			sourceTree = "<group>";
-		};
-		ABBBBC0E269632FC00341511 /* CV Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "CV Cell";
 			sourceTree = "<group>";
 		};
 		ABBBBC152696335200341511 /* Extentions */ = {
