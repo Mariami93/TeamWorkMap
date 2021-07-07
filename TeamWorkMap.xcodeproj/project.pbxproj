@@ -14,6 +14,8 @@
 		9A6684F12695D355003629C3 /* TeamWorkMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */; };
 		9A6684F32695D355003629C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684F22695D355003629C3 /* Assets.xcassets */; };
 		9A6684F62695D355003629C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A6684F42695D355003629C3 /* LaunchScreen.storyboard */; };
+		F180BFC52695FEAB002567DE /* UserLocationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F180BFC32695FEAB002567DE /* UserLocationViewController.storyboard */; };
+		F180BFC62695FEAB002567DE /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180BFC42695FEAB002567DE /* UserLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9A6684F22695D355003629C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A6684F52695D355003629C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A6684F72695D355003629C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F180BFC32695FEAB002567DE /* UserLocationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserLocationViewController.storyboard; sourceTree = "<group>"; };
+		F180BFC42695FEAB002567DE /* UserLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		9A6684E52695D355003629C3 /* TeamWorkMap */ = {
 			isa = PBXGroup;
 			children = (
+				F180BFC12695FEAB002567DE /* UserLocation */,
 				9A6684E62695D355003629C3 /* AppDelegate.swift */,
 				9A6684E82695D355003629C3 /* SceneDelegate.swift */,
 				9A6684EA2695D355003629C3 /* ViewController.swift */,
@@ -68,6 +73,23 @@
 				9A6684EF2695D355003629C3 /* TeamWorkMap.xcdatamodeld */,
 			);
 			path = TeamWorkMap;
+			sourceTree = "<group>";
+		};
+		F180BFC12695FEAB002567DE /* UserLocation */ = {
+			isa = PBXGroup;
+			children = (
+				F180BFC22695FEAB002567DE /* View */,
+			);
+			path = UserLocation;
+			sourceTree = "<group>";
+		};
+		F180BFC22695FEAB002567DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F180BFC32695FEAB002567DE /* UserLocationViewController.storyboard */,
+				F180BFC42695FEAB002567DE /* UserLocationViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +152,7 @@
 				9A6684F62695D355003629C3 /* LaunchScreen.storyboard in Resources */,
 				9A6684F32695D355003629C3 /* Assets.xcassets in Resources */,
 				9A6684EE2695D355003629C3 /* Main.storyboard in Resources */,
+				F180BFC52695FEAB002567DE /* UserLocationViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +167,7 @@
 				9A6684EB2695D355003629C3 /* ViewController.swift in Sources */,
 				9A6684E72695D355003629C3 /* AppDelegate.swift in Sources */,
 				9A6684E92695D355003629C3 /* SceneDelegate.swift in Sources */,
+				F180BFC62695FEAB002567DE /* UserLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
